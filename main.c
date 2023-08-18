@@ -17,7 +17,7 @@ int initializeData(struct customer customerDetails[], int *lastIndex, int *lastA
     int val;
 	int i = 0, j=0;
 	FILE *fp, *fBalanceDB = NULL;
-	DBG(" Info: Opening %s file\n", MACRO_DATA_FILE_NAME);
+	DBG(" Info: Openin %s file\n", MACRO_DATA_FILE_NAME);
     fp = fopen(MACRO_DATA_FILE_NAME, "r");
 	if (access(MACRO_BALANCE_DB_FILE_NAME, F_OK) == 0) 
 	{
